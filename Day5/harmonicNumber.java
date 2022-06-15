@@ -1,3 +1,4 @@
+
 public class harmonicNumber {
 	public static void main (String[] args) {
 	     double n=10,i;
