@@ -1,4 +1,5 @@
 
+
 public class VowelorConstantAlphbet {
 
 	public static void main (String [] args) {
