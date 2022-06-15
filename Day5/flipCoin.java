@@ -1,4 +1,5 @@
 
+
 public class flipCoin {
 
         static final double count = 10;
