@@ -1,33 +1,31 @@
 
+import java.util.Scanner;
+ 
+   public class SimulateStopwatch {
 
-import java.math.BigInteger;
-import java.time.Duration;
-import java.time.Instant;
+       	public static void main(String [] args) {
 
-public class SimulateStopwatch {
+	    Scanner sc=new Scanner(System.in);
 
-    public static void main(String[] args) {
-	
-        Instant instantStarted = Instant.now();
-        Fibonacci(40);
-        Instant instantStopped = Instant.now();
+	    long start,end;
+            double tim;
 
-        Duration durationBetween = Duration.between(instantStarted, instantStopped);
+		System.out.println("Type any character to start the stopwatch");
 
-        System.out.println("Get elapsed time in milliseconds: " + durationBetween.toMillis());
-        System.out.println("Get elapsed time in seconds: " + durationBetween.toSeconds());
-        System.out.println("Get elapsed time in minutes: " + durationBetween.toMinutes());
+	    char s=sc.next().charAt(0);
+	    start=System.currentTimeMillis();
 
+		System.out.println("Type any character to stop the stopwatch");
 
-    }
+	    char m=sc.next().charAt(0);
+	    end=System.currentTimeMillis();
 
-    private static BigInteger Fibonacci(int n) {
-        if (n < 2)
-            return BigInteger.ONE;
-        else
-            return Fibonacci(n - 1).add(Fibonacci(n - 2));
-    }
+	    tim=(end-start)/1000.0;
+
+		System.out.println(tim);
+
+	}
+
 }
-
 
 
